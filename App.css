@@ -1,0 +1,63 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #ffd6ec, #ffe6f2);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 173, 229, 0.6);
+}
+
+/* Logo com brilho rosa */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms, transform 300ms ease;
+  filter: drop-shadow(0 0 1.2em #fba6d2aa);
+}
+.logo:hover {
+  filter: drop-shadow(0 0 3em #ffb3d9) brightness(1.2);
+  transform: scale(1.05);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 3em #ff99ccaa) brightness(1.2);
+}
+
+/* Animação de rotação */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Só gira se não tiver preferência por movimento reduzido */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Cartões com fundo delicado */
+.card {
+  padding: 2em;
+  background-color: #ffe9f3;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(255, 173, 229, 0.4);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 140, 200, 0.5);
+}
+
+/* Texto explicativo em cinza rosado */
+.read-the-docs {
+  color: #c483a9;
+  font-style: italic;
+}

@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', cursive, sans-serif;
+  color: #4a2040; /* Roxo suave */
+}
+
+body {
+  background: linear-gradient(135deg, #ffe0f0, #f9c8dd);
+  background-image: url('https://www.transparenttextures.com/patterns/floral-wallpaper.png'); /* textura floral delicada */
+  padding: 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cabeçalhos */
+h1, h2 {
+  margin-bottom: 20px;
+  color: #8a1452;
+  text-align: center;
+  text-shadow: 1px 1px 2px #ffffff;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2rem;
+}
+
+/* Formulário */
+form {
+  background-color: #fff0f6;
+  padding: 25px 30px;
+  max-width: 520px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(238, 128, 167, 0.4);
+  border: 2px solid #f3a5c7;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 2px solid #e89ab3;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  background-color: #fff7fa;
+}
+
+input:focus {
+  border-color: #d75f91;
+  background-color: #fce4ec;
+  outline: none;
+}
+
+/* Botão */
+button {
+  width: 100%;
+  background-color: #f78fb3;
+  color: white;
+  padding: 14px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(247, 143, 179, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e26a93;
+}
+
+/* Lista de Ocorrências */
+ul {
+  max-width: 600px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  background: #fff0f5;
+  padding: 20px 25px;
+  margin-bottom: 15px;
+  border-left: 8px solid #e49ab0;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(243, 174, 202, 0.3);
+  font-size: 1.1rem;
+  color: #833c62;
+  line-height: 1.6;
+}
+
+li strong {
+  color: #5e1f40;
+}
